@@ -15,6 +15,7 @@ const birth = {
 function App() {
   return (
     <div className="App">
+      Learn React
       <QuoteApp quotes={interests} />
     </div>
   );
