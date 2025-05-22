@@ -1,24 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import QuoteApp from './QuoteApp';
+
+const username: string = "Namrata";
+const interests: string[] = ["Playing Cricket", "Watching Movies", "Podcast", "Reading Novels"];
+const active: boolean = true;
+
+const birth = {
+  place: "Bangalore",
+  year: 2000
+};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <QuoteApp quotes={interests} />
     </div>
   );
 }
