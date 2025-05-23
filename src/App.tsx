@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import QuoteApp from './QuoteApp';
+import QuoteAppFunctional from './QuoteAppFunctional';
 
 const username: string = "Namrata";
 const interests: string[] = ["Playing Cricket", "Watching Movies", "Podcast", "Reading Novels"];
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       Learn React
       <QuoteApp quotes={interests} />
+      <QuoteAppFunctional quotes={interests} />
     </div>
   );
 }
